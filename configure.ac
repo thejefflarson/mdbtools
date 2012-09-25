@@ -67,7 +67,7 @@ AC_SUBST(SQL)
 AC_SUBST(LFLAGS)
 
 CFLAGS="$CFLAGS -Wall"
-LDFLAGS="$LDFLAGS -Wl,--as-needed"
+LDFLAGS="$LDFLAGS "
 
 dnl check for iODBC
 
@@ -177,7 +177,7 @@ if test x$enable_gtk_doc = xauto ; then
   if test x$GTKDOC = xtrue ; then
     enable_gtk_doc=yes
   else
-    enable_gtk_doc=no 
+    enable_gtk_doc=no
   fi
 fi
 
